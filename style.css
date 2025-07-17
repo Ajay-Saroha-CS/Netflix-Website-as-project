@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+header {
+    height: 100vh;
+    width:100%;
+    background-image: url(assets/image/bg.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+
+}
+
+header .box {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73vw;
+    margin: auto;
+    padding: 25px;
+
+}
+
+nav .logo {
+    width: 175px;
+    /* filter:brightness(2); */
+    position: relative;
+    z-index: 10;
+}
+
+nav .bttn {
+    position: relative;
+    z-index: 10;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+
+}
+.sct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:23px;
+    background-color:transparent;
+    border:1px solid rgb(245, 245, 241);
+    padding:7px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:500;
+    cursor:pointer;
+    text-decoration: none;
+}
+.sct select{
+    background-color:transparent;
+    border:none;
+    color:white;
+}
+.sct select option{
+    color:black;
+}
+.btn{
+    background-color:red;
+    padding:7px;
+    border-radius:5px;
+    font-weight:900;
+    /* font-family:poppins ,sans-serif; */
+    border:none;
+    color:white;
+}
+.btn-sign{
+    font-size: 14px;
+    font-weight: 500;
+    padding:10px;
+}
+.btn-start{
+    width: 208px;
+    height: 54px;
+    font-size: 24px;
+    font-weight: 500;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-svg{
+    padding:7px;
+}
+.search input{
+    padding: 17px;
+    width: 342px;
+    margin: 16px;
+    background-color: rgba(23, 23, 23, 0.6);
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 17px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 70%;
+    flex-direction: column;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 23px;
+    padding: 30px;
+}
+
+.main> :first-child {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.main> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+}
+.sapration{
+    height: 10px;
+    background-color:rgba(58, 57, 57, 0.884);
+}
+.container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 14px;
+    padding: 14px;
+   
+    align-items: center;
+}
+.secimg{
+    position:relative;
+}
+.secimg img{
+    width:37vw;
+    margin:40px;
+}
+.secimg video{
+    position: absolute;
+    right: 42px;
+    top: 120px;
+    z-index: -1;
+    width: 435px;
+}
+.sectext{
+    display:grid;
+    
+    width: 520px;
+    gap:18px;
+}
+.sectext>:first-child{
+    font-size:48px;
+    font-weight:900;
+    font-family:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.sectext>:nth-child(2){
+    font-size:25px;
+    font-weight:400;
+    
+    font-family:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.secimg .box{
+    width: 315px;
+    height: 100px;
+    border: 3px solid rgba(58, 57, 57, 0.884);
+    position: absolute;
+    top: 288px;
+    left: 130px;
+    border-radius: 16px;
+    background-color: black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.secimg .box img{
+    width:70px;
+    margin:10px;
+}
+.secimg .box .boxtext{
+
+margin:5px;
+}
+.secimg .box .download img{
+    width:53px;
+    margin:23px;
+}
+.secimg .thirdvid{
+    position: absolute;
+    right: 138px;
+    top: 74px;
+    z-index: -1;
+    width: 322px;
+}
+.boxtext :nth-child(1){
+    font-size:16px;
+    font-weight:500;
+}
+.boxtext :nth-child(2){
+    font-size:14px;
+    font-weight:400;
+    color:rgb(0,113,225);
+}
+
+@media only screen and (max-width:500px ){
+    header {
+        height: 70vh;
+        width:100%;
+        background-image: url(assets/image/bg.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: max(1200px, 100vw);
+        position: relative;
+    
+    }
+    header .box {
+        width: 100%;
+        height: 70vh;
+        opacity: 0.44;
+        position: absolute;
+        top: 0;
+        background-color: black;
+    }
+    nav {
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin: 10px auto;
+        padding: 13px;
+    
+    }
+    
+    nav .logo {
+        width: 94px;
+       
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav .button {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        height: 65%;
+        flex-direction: column;
+        color: white;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        gap: 20px;
+        padding: 35px;
+        /* width:370px; */
+    
+    }
+    
+    .main> :first-child {
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .main> :nth-child(2) {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .main> :nth-child(3) {
+        font-size: 17px;
+        font-weight: 400px;
+        text-align: center;
+    }
+    .sapration{
+        height: 8px;
+        background-color:rgba(58, 57, 57, 0.884);
+    }
+    #sct{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        background-color:transparent;
+        border:1px solid rgb(245, 245, 241);
+        padding:7px;
+        border-radius:5px;
+        font-size:15px;
+        font-weight:700;
+        cursor:pointer;
+
+    }
+    #sct select{
+        background-color:transparent;
+        border:none;
+        color:white;
+    }
+    #sct select option{
+        color:black;
+    }
+    .btn{
+        background-color:red;
+        padding:7px;
+        border-radius:5px;
+        font-weight:900;
+        /* font-family:poppins ,sans-serif; */
+        border:none;
+        color:white;
+        cursor:pointer;
+    }
+    .btn-sign{
+        font-size: 14px;
+        font-weight: 500;
+        padding:10px;
+        margin: 2px;
+    width: 66px;
+    }
+    .btn-start{
+        width: 150px;
+        height: 50px;
+        font-size: 19px;
+        font-weight: 300;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .search{
+        display:grid;
+        place-items:center;
+    }
+    .btn-svg{
+        padding:3px;
+    }
+    .search input{
+        padding: 13px;
+        width: 270px;
+        margin: 10px;
+        background-color: rgba(23, 23, 23, 0.6);
+        border-radius: 5px;
+        border: 1px solid rgb(100, 94, 94);
+        font-size: 13px;
+        color: white;
+    }
+}
